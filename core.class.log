@@ -1,0 +1,57 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214424925985@s.whatsapp.net',
+    fromMe: false,
+    id: '3ABCA02EA9EC5D14B65A',
+    participant: undefined
+  },
+  messageTimestamp: 1677741661,
+  pushName: 'Gerardo G',
+  message: Message {
+    conversation: '👋🏻',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '👋🏻',
+  from: '5214424925985'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214424925985@s.whatsapp.net',
+    fromMe: false,
+    id: '3A6F131507D024A647E1',
+    participant: undefined
+  },
+  messageTimestamp: 1677741667,
+  pushName: 'Gerardo G',
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5214424925985'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214424925985@s.whatsapp.net',
+    fromMe: false,
+    id: '3A7C78E506586B4A9F32',
+    participant: undefined
+  },
+  messageTimestamp: 1677741687,
+  pushName: 'Gerardo G',
+  message: Message {
+    conversation: 'Info',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Info',
+  from: '5214424925985'
+}
