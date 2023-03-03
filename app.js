@@ -4,7 +4,7 @@ const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
-const flowAgendar = addKeyword(['gracias', 'grac']).addAnswer(
+const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
     [
         '🚀 Puedes ayudarnos con tu granito de arena en nuestras redes  ',
         '[*Twitter*] https://twitter.com/RealEnglish191',
@@ -15,14 +15,18 @@ const flowAgendar = addKeyword(['gracias', 'grac']).addAnswer(
 
 
 
-const flowGracias = addKeyword(['agendar']).addAnswer(
+const flowAgendar = addKeyword(['agendar']).addAnswer(
     [
-        '🕐 Puedes agendar con nosotros tu clase muestra :',
-        '[*Viernes*] https://twitter.com/RealEnglish191',
-        '[*Miercoles*] https://www.facebook.com/profile.php?id=100063605289046',
-        '[*Sabados*] https://www.instagram.com/realenglish19/',
+        '🕐 Puedes agendar con nosotros tu clase muestra (1 hora):',
+        '[*Lunes*] - de 10am a 6pm',
+        '[*Miercoles*] - de 4pm a 8pm',
+        '[*Viernes*] - de 10am a 6pm',
+        '[*Sabados*] - de 9am a 6pm',
         'Cuentame cual es de tu agrado y a que hora te gustaria'
-    ]
+    ],
+    null,
+    null,
+    [flowGracias]
 )
 
 const flowDocs = addKeyword('info', 'información', 'datos').addAnswer(['📄 Aquí encontras la información de nuestros cursos'])
