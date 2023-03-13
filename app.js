@@ -26,16 +26,14 @@ const flowAgendar = addKeyword(['agendar']).addAnswer(
     ],
     null,
     null,
-    [flowGracias]
+    flowGracias
 )
 
-const flowDocs = addKeyword('info', 'información', 'datos').addAnswer(['📄 Aquí encontras la información de nuestros cursos'])
-.addAnswer({ media:'https://scontent.fqro3-1.fna.fbcdn.net/v/t39.30808-6/333924407_224445153306501_2657589699874441165_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=PELJN1R9tUcAX-XpUNj&_nc_ht=scontent.fqro3-1.fna&oh=00_AfAHvBGJO4aSyrUYuX3_kDHrV0dUIHtfRMzFdLkNV6fSlw&oe=6401D694'})
-.addAnswer({ media:'https://scontent.fqro3-1.fna.fbcdn.net/v/t39.30808-6/333124755_609151260545478_7503614010542090844_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=TymB40htZh8AX-AQYoV&tn=YTHilcD4lcRA4_-E&_nc_ht=scontent.fqro3-1.fna&oh=00_AfByPwRKJ4_DjIequYjK7th9ZAL78sElxg1i8b6b2bmK2w&oe=640363B5'})
-.addAnswer(['Dinos cual es de tu agrado y aclaramos tus dudas 🔔'],
-    null,
-    null,
-    [flowGracias]
+const flowDocs = addKeyword('info', 'información', 'datos').addAnswer('📄 Aquí encontras la información de nuestros cursos Dinos cual es de tu agrado y aclaramos tus dudas 🔔',{
+    media:'https://scontent.fqro3-1.fna.fbcdn.net/v/t39.30808-6/335264699_1289520988617071_2728054448342204104_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=EUuTATsJ_P0AX-gWjCq&_nc_ht=scontent.fqro3-1.fna&oh=00_AfCMfjXB8wRo1iv9Rvdk9rmTgjHNRLzyL1-VPJUSEyzYuw&oe=6414045E'
+},
+  null,
+    [flowGracias, flowAgendar]
 )
 
 
@@ -50,7 +48,7 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo', 'buenas'])
         ],
         null,
         null,
-        [flowDocs, flowGracias]
+        [flowDocs, flowGracias, flowAgendar]
     )
 
 const main = async () => {
